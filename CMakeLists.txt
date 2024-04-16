@@ -14,6 +14,7 @@ find_package(nav_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_eigen REQUIRED)
+find_package(map_manager_srvs REQUIRED)
 
 include_directories(
   include
@@ -27,6 +28,7 @@ set(dependencies
   tf2
   tf2_ros
   tf2_eigen
+  map_manager_srvs
 )
 
 add_library(map_manager SHARED
